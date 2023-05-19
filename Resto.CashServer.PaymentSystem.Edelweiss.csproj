@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Zheka\Desktop\Plugin.Front.Edelweiss\Resto.CashServer.PaymentSystem.Edelweiss.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{918D4208-9276-40F5-8327-3EF51A2FB056}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Resto.CashServer.PaymentSystem.Edelweiss</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>8.4.6018.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Resto.CashServer.PaymentSystem.Edelweiss</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BLToolkit.4">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\BLToolkit.4.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="iikoFront.Net">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\iikoFront.Net.exe</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Resto.CashServer">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\Resto.CashServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Resto.CashServer.Services">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\Resto.CashServer.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Resto.Framework">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\Resto.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Resto.Front.Api">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\Resto.Front.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Resto.Front.Common">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\Resto.Front.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Resto.Front.Controllers">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\Resto.Front.Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="Resto.Front.Views">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\Resto.Front.Views.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Interactive">
+      <HintPath>..\..\..\..\..\Program Files\iiko\iikoRMS\Front.Net\System.Interactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrandInfo.cs" />
+    <Compile Include="Resto\Front\Localization\Resources\EdelweissLocalResources.cs" />
+    <Compile Include="EdelweissPaymentType.cs" />
+    <Compile Include="EdelweissPaymentItem.cs" />
+    <Compile Include="EdelweissPluginContext.cs" />
+    <Compile Include="EdelweissViewManager.cs" />
+    <Compile Include="Settings\EdelweissSettingsLocator.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Exceptions\EdelweissAvailabilityException.cs" />
+    <Compile Include="Exceptions\EdelweissException.cs" />
+    <Compile Include="Exceptions\EdelweissPayException.cs" />
+    <Compile Include="Service\EdelweissFault.cs" />
+    <Compile Include="Service\EdelweissService.cs" />
+    <Compile Include="Service\EdelweissServiceClient.cs" />
+    <Compile Include="Service\IEdelweissService.cs" />
+    <Compile Include="Views\GuestSearchModel.cs" />
+    <Compile Include="Views\GuestsSearchScreenState.cs" />
+    <Compile Include="Data\EdelweissGuest.cs" />
+    <Compile Include="Data\EdelweissGuestType.cs" />
+    <Compile Include="Cheques\EdelweissBillCheque.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\EdelweissLocalResources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Manifest.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
